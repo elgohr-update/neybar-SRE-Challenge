@@ -1,3 +1,4 @@
 terraform_local.tfvars
 .terraform/
 .terraform.lock.hcl
+gcloud-service-account-key.json
