@@ -18,7 +18,7 @@ jobs:
           account_key: ${{ secrets.GCLOUD_KEY }}
       - name: Publish to Registry
         id: docker
-        uses: elgohr/Publish-Docker-Github-Action@master
+        uses: elgohr/Publish-Docker-Github-Action@v5
         with:
           name: gcr.io/${{ secrets.GCLOUD_PROJECT_ID }}/app1
           username: ${{ steps.gcloud.outputs.username }}
